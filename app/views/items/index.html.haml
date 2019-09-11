@@ -7,58 +7,16 @@
     %h2 ピックアップカテゴリー
     .pickup-box  
       = link_to "レディース新着アイテム"
-      .pickup-box__items
-        .items__box
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m84815040844_1.jpg?1563714873", class: "image"
-            = link_to "かばん"
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m66530727648_1.jpg?1563762901", class: "image"
-            = link_to "フック"
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m46541478663_1.jpg?1563762610", class: "image"
-            = link_to "絵本"
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m85783559922_1.jpg?1563763887", class: "image"
-            = link_to "マグカップ"
-      .pickup-box__view-all
-        = link_to "全ての商品を見る"
+    =render partial: 'items/box-contents'
+    
     .pickup-box  
       = link_to "メンズ新着アイテム"
-      .pickup-box__items
-        .items__box
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m84815040844_1.jpg?1563714873", class: "image"
-            = link_to "かばん"
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m66530727648_1.jpg?1563762901", class: "image"
-            = link_to "フック"
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m46541478663_1.jpg?1563762610", class: "image"
-            = link_to "絵本"
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m85783559922_1.jpg?1563763887", class: "image"
-            = link_to "マグカップ"
-      .pickup-box__view-all
-        = link_to "すべての商品を見る"
+    =render partial: 'items/box-contents'
+    
     .pickup-box  
       = link_to "ベビー・キッズ 新着アイテム"
-      .pickup-box__items
-        .items__box
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m84815040844_1.jpg?1563714873", class: "image"
-            = link_to "かばん"
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m66530727648_1.jpg?1563762901", class: "image"
-            = link_to "フック"
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m46541478663_1.jpg?1563762610", class: "image"
-            = link_to "絵本"
-          .items__product
-            = image_tag "https://static.mercdn.net/thumb/photos/m85783559922_1.jpg?1563763887", class: "image"
-            = link_to "マグカップ"
-      .pickup-box__view-all
-        = link_to "全ての商品を見る"
+    =render partial: 'items/box-contents'
+  
   .aside
     .aside__banner
 
