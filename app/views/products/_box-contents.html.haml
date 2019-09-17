@@ -1,5 +1,5 @@
 .box-contents
-  - products.order('created_at DESC').limit(4).each do |product|
+  - @products.order('created_at DESC').limit(4).each do |product|
     .items-box
       .items-box_photo
         = image_tag product.product_introduction, size: "210x200"

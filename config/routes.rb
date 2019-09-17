@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'items#index'
+  root 'products#index'
 
   #商品ページ
   get  'sell',   to: 'products#new',    as: :new_product

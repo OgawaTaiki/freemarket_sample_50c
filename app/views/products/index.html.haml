@@ -7,15 +7,15 @@
     %h2 ピックアップカテゴリー
     .pickup-box  
       = link_to "レディース新着アイテム"
-    =render partial: 'products/box-contents'
+    =render partial: 'products/box-contents', locals:{products:@products.where(category_id: "1")}
     
     .pickup-box  
       = link_to "メンズ新着アイテム"
-    =render partial: 'products/box-contents'
+    =render partial: 'products/box-contents', locals:{products:@products.where(category_id: "2")}
     
     .pickup-box  
       = link_to "ベビー・キッズ 新着アイテム"
-    =render partial: 'products/box-contents'
+    =render partial: 'products/box-contents', locals:{products:@products.where(category_id: "3")}
   
   .aside
     .aside__banner
