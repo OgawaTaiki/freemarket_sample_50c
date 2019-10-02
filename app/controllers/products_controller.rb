@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   
   def index
-    @products = Product.all
+    @products = Product.with_attached_images
   end
 
   def new

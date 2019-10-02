@@ -7,9 +7,9 @@ class Product < ApplicationRecord
   belongs_to_active_hash :delivery_method
   belongs_to_active_hash :delivery_date
   belongs_to :category
-  belongs_to :user
+  #belongs_to :user
 
-  has_many :images
+  has_many_attached :images
 
   mount_uploader :image, ImageUploader
 
@@ -17,5 +17,6 @@ class Product < ApplicationRecord
   validates :name,length:{ maximum: 40 }
   validates :introduction,length:{ maximum: 1000 }
   validates :price, numericality:{ greater_than_or_equal_to: 300, less_than_or_equal_to: 9999999}
+  
 
 end
